@@ -1,0 +1,79 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Barlow Semi Condensed', sans-serif; 
+}
+
+ul, ol{
+	list-style: none;
+}
+.slideshow{
+  width: 100%;
+  position: relative;
+}
+.slider li, ul{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.slider li img{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.slider .caption{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 25%;
+  padding: 15px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+.slider .caption h1{
+  font-size: 50px;
+  background-color: rgba(204,0,102,0.6);
+}
+.slider .caption p{
+  font-size: 20px;
+  margin-top: 10px;
+  background-color: rgba(204,0,102,0.6);
+}
+.pagination{
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.pagination li{
+  font-size: 20px;
+  margin: 2px 5px;
+  cursor: pointer;
+}
+.left, .right{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 45px;
+}
+.left{
+  left: 21%;
+}
+.right{
+  right: 21%;
+}
+.left span, .right span{
+  cursor: pointer;
+}
